@@ -1,0 +1,13 @@
+body{
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text);
+
+}
+
+main {
+  flex-grow: 1;
+}

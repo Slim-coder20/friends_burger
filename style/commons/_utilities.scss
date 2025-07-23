@@ -1,0 +1,13 @@
+// création des classes utilitaire qui seront utiliser dans le projet // 
+.flexMid, .midFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 96%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}

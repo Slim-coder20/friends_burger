@@ -1,0 +1,13 @@
+// importatation des fichiers commun // 
+@use "commons/reset" as *; 
+@use "commons/variables" as *; 
+@use "commons/polices" as *;
+@use "commons/utilities" as *;
+
+// Importation des fichiers spécifique au templates // 
+@use "template/header" as *;
+@use "template/body" as *;
+@use "template/footer" as *;
+
+
+
