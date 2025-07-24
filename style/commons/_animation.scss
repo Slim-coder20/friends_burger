@@ -1,0 +1,45 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+  background-color: var(--overlay);
+  animation: desappear 1s ease-in-out forwards;
+}
+.loader{
+  z-index: 30;
+  width: 100px;
+  height: 100px;
+  border: 10px solid var(--border);
+  border-top-color:#0393f3;
+  border-bottom-color: #10ca6d;
+  border-radius: 50%;
+  animation: spin 0.5s linear infinite;
+
+}
+
+.text-loader{
+  transform: translate(-50%, 50px);
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+
+}
+
+@keyframes desappear {
+  99% {
+    opacity: 0;
+  }
+  100% {
+    display: none;
+
+  }
+}

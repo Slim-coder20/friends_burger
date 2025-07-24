@@ -19,6 +19,19 @@
   align-items: center;
   justify-content: center;
   box-shadow: 2px 2px 4px var(--text);
+  animation: appear 1s ease-in-out 1s forwards;
+  opacity: 0;
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+  }
 
   img {
     width: 250px;

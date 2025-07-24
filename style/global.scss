@@ -3,6 +3,7 @@
 @use "commons/variables" as *; 
 @use "commons/polices" as *;
 @use "commons/utilities" as *;
+@use"commons/animation" as *; 
 
 // Importation des fichiers spécifique au templates // 
 @use "template/header" as *;
@@ -10,6 +11,7 @@
 @use "template/footer" as *;
 @use "pages/home" as *;
 @use"pages/food" as *; 
+
 
 
 
