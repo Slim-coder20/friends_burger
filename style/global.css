@@ -136,10 +136,19 @@ h5 {
   line-height: clamp(30px, 24px + 0.66vw, 36px);
 }
 
-.flexMid, .midFlex {
+.flexMid,
+.midFlex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.posMid,
+.midPos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .container {
@@ -153,7 +162,6 @@ header {
   border-bottom: 2px solid var(--border);
   box-shadow: 0 3px 5px var(--border);
   padding: 20px;
-  margin-top: 20px;
   position: relative;
 }
 
@@ -273,6 +281,7 @@ nav a:not(:hover)::after {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     transition: all 0.33s;
+    z-index: 10;
   }
   nav .h4 {
     color: white;
@@ -339,5 +348,95 @@ footer {
   .infos-footer {
     flex-direction: column;
     gap: 30px;
+    padding: 15px;
+  }
+}
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+.hero h2 {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(139, 117, 117, 0.5019607843);
+  text-shadow: 2px 2px 4px black;
+}
+
+.hero-subtitle {
+  text-align: center;
+  padding: 30px;
+  margin: 20px 0;
+  line-height: 80px;
+}
+
+.specialities-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.specialities-link a {
+  width: 35vw;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  filter: opacity(0.8);
+  transition: all 0.33s ease-in-out;
+}
+.specialities-link a:hover {
+  filter: opacity(1);
+  letter-spacing: 2px;
+}
+.specialities-link a img {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 2px 2px 4px var(--bg-hover);
+}
+.specialities-link a p {
+  padding-top: 15px;
+  color: var(--bg-hover);
+}
+
+@media (max-width: 900px) {
+  .specialities-link {
+    font-size: 14px;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+    line-height: 50px;
+  }
+}
+.plainning {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.plainning span {
+  font-size: 30px;
+}
+.plainning ul li {
+  margin: 20px 0;
+}
+
+@media (max-width: 900px) {
+  .plainning {
+    font-size: 18px;
+  }
+  span {
+    font-size: 15px;
+  }
+  ul li {
+    font-size: 14px;
+  }
+  .h4 {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=global.css.map */
