@@ -3,6 +3,7 @@ footer {
   box-shadow: 0 -3px 5px var(--border);
   padding: 20px;
   margin-top: 20px;
+  background: var(--bg-secondary);
 }
 
 .infos-footer {
@@ -13,7 +14,7 @@ footer {
     width: 120px;
     height: 120px;
     padding: 20px;
-    background: #f5caca;
+    background: var(--text);
     display: flex;
     align-items: center;
     justify-content: center;
