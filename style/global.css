@@ -439,4 +439,61 @@ footer {
   .h4 {
     font-size: 14px;
   }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+.contact h3 {
+  margin: 10px 0;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 50vw;
+  max-width: 900px;
+  min-width: 280px;
+}
+.contact form p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact form input,
+.contact form textarea {
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  margin: 10px 0;
+  box-shadow: 1px 1px 2px var(--text);
+}
+.contact form button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--bg-primary);
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 1px 1px 2px var(--bg-primary);
+  cursor: pointer;
+  transition: all 0.33s;
+}
+.contact form button:hover {
+  background: var(--bg-hover);
+  color: var(--bg-primary);
+}
+.contact form .recall {
+  display: flex;
+  align-items: center;
+}
+.contact form #recall {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
 }/*# sourceMappingURL=global.css.map */
